@@ -12,12 +12,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Fondo musical-->
-		<audio id="fondo" src="music/fondo.mp3"></audio>
+		<audio id="fondo" src="music/fondo.mp3" autoplay loop preload="metadata"></audio>
 		<script>
-		var audio = document.getElementById("fondo");
-		audio.play()
-		audio.loop=true		
+			var audio = document.getElementById("fondo");
+			audio.volume = 0.3;
+	/*	function quesuene(){
 		audio.volume = 0.3;
+		audio.play();
+		audio.loop=true;
+	}*/
 		</script>
 
 	</head>
