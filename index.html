@@ -12,12 +12,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Fondo musical-->
-		<audio id="fondo" src="music/fondo.mp3" autoplay loop></audio>
+		<audio id="fondo" src="music/fondo.mp3"></audio>
 		<script>
 		var audio = document.getElementById("fondo");
+		audio.play()
+		audio.loop=true		
 		audio.volume = 0.3;
 		</script>
-		
+
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
